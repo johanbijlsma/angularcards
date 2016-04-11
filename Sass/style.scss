@@ -1,0 +1,186 @@
+//variables
+$open-sans: 'Open Sans',
+sans-serif;
+$gloria: 'Gloria Hallelujah',
+cursive;
+$lato: 'Lato',
+sans-serif;
+$montserrat: 'Montserrat',
+sans-serif;
+$handlee: 'Handlee',
+cursive;
+$shadow: 0px 20px 13px -10px rgba(0, 0, 0, 0.5);
+@mixin green {
+    background: #3aad3a;
+    border-top: #2b802b solid 5px;
+}
+
+@mixin red {
+    background: #c63a3a;
+    border-top: #9f2c2c solid 5px;
+}
+
+@mixin blue {
+    background: #415be8;
+    border-top: #2b4c80 solid 5px;
+}
+
+@mixin special {
+    background: linear-gradient(45deg, #415BE7 0%, #415be8 10%, #c8b423 10%, #c8b423 20%, #415be8 20%, #415be8 30%, #c8b423 30%, #c8b423 40%, #415BE7 40%, #415be8 50%, #c8b423 50%, #c8b423 60%, #415be8 60%, #415be8 70%, #c8b423 70%, #c8b423 80%, #415BE7 80%, #415be8 90%, #c8b423 90%, #c8b423 100%);
+    border-top: #2b4c80 solid 5px;
+}
+
+.card-examples,
+.angular-cards {
+    display: flex;
+    justify-content: space-between;
+    clear: left;
+    flex-wrap: wrap;
+    .card {
+        height: 18em;
+        width: 12em;
+        background: #e5e5e5;
+        box-shadow: $shadow;
+        text-align: center;
+        position: relative;
+        margin-bottom: 4em;
+        overflow: hidden;
+        //aspect-settings
+        &.landscape {
+            height: 12em;
+            width: 18em;
+        }
+        &.square {
+            width: 18em;
+            height: 18em;
+        }
+        &.rounded {
+            border-radius: 5px;
+        }
+        //font-settings
+        &.opensans {
+            font-family: $open-sans;
+        }
+        &.lato {
+            font-family: $lato;
+        }
+        &.montserrat {
+            font-family: $montserrat;
+        }
+        &.handlee {
+            font-family: $handlee;
+        }
+        &.gloria {
+            font-family: $gloria;
+        }
+        //        photo option
+        &.image-grass {
+            background: url(../images/gras.jpg);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+        &.image-moon {
+            background: url(../images/moon_and_stars.jpg);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+        &.image-skyscraper {
+            background: url(../images/skyscraper.jpg);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+        &.image-winter {
+            background: url(../images/winter.jpg);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+        .fold {
+            position: absolute;
+            top: 50%;
+            display: block;
+            height: 60%;
+            width: 100%;
+            &.green {
+                @include green;
+            }
+            &.red {
+                @include red;
+            }
+            &.blue {
+                @include blue;
+            }
+            &.special {
+                @include special;
+            }
+            .icon {
+                margin-top: -30px;
+                i {
+                    font-size: 2.4em;
+                    background: #fff;
+                    border-radius: 50%;
+                    width: 1.6em;
+                    height: 1.6em;
+                    line-height: 1.6em;
+                    border: #999 thin solid;
+                    color: goldenrod;
+                    box-shadow: $shadow;
+                }
+            }
+        }
+        h1 {
+            font-size: 1.8em;
+            text-shadow: 1px 1px 3px #fff;
+        }
+        p.white {
+            color: #fff;
+            padding: 0.5em;
+        }
+    }
+}
+
+.addCards {
+    img.imgexample {
+        margin-right: 30px;
+    }
+    .colorsample {
+        height: 50px;
+        width: 66.8px;
+        background: blue;
+        margin-right: 30px;
+        display: inline-block;
+        vertical-align: middle;
+        &.red {
+            @include red;
+        }
+        &.blue {
+            @include blue;
+        }
+        &.green {
+            @include green;
+        }
+        &.special {
+            @include special;
+        }
+    }
+    p.example {
+        margin-left: 2em;
+        color: #337AB7;
+        float: right;
+        &.lato {
+            font-family: $lato;
+        }
+        &.montserrat {
+            font-family: $montserrat;
+        }
+        &.handlee {
+            font-family: $handlee;
+        }
+        &.gloria {
+            font-family: $gloria;
+        }
+    }
+}
