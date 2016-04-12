@@ -14,7 +14,7 @@
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">Angular-cards</a>
+                <a class="navbar-brand" href="/">Angular-cards</a>
             </div>
         </div>
     </nav>
@@ -23,197 +23,200 @@
             <h1>Angular Cards --- Working Title</h1>
             <p class="lead">Welcome to Angular Cards, an online application in which you can make online cards, and in the future send them to your friends, or your mom... </p>
         </div>
-        <div class="addCards">
-            <div class="well col-md-12 step1">
-                <h1>Step 1; Choose a aspect ratio</h1>
+        <h2>Make your own cards now in only a few steps</h2>
+        <button class="btn btn-danger btn-lg" ng-click="showAddCards = !showAddCards">Start Now</button>
 
-                <div class="input-group">
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="aspect-select" id="aspect-select-landscape" value="landscape" ng-model="newCard.cardFormat"> Landscape
-                        </label>
-                    </div>
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="aspect-select" id="aspect-select-portrait" value="portrait" ng-model="newCard.aspect"> Portrait
-                        </label>
-                    </div>
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="aspect-select" id="aspect-select-square" value="square" ng-model="newCard.cardFormat"> Square
-                        </label>
-                    </div>
+    <div class="addCards" ng-if="showAddCards">
+        <div class="well col-md-12 step1">
+            <h1>Step 1; Choose a aspect ratio</h1>
 
-                    <button class="btn btn-primary" ng-click="">Next step <span class="glyphicon glyphicon glyphicon-menu-right"></span>
-                    </button>
-                </div>
-
-            </div>
-            <div class="well col-md-12 step2" ng-hide="step">
-                <h1>Step 2; Would you like <em>rounded</em> corners?</h1>
-
-                <div class="input-group">
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="rounded-select" id="rounded-select-yes" value="rounded" ng-model="newCard.rounded">Yes, please
-                        </label>
-                    </div>
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="rounded-select" id="rounded-select-no" value="notRounded" ng-model="newCard.rounded">No, thanks
-                        </label>
-                    </div>
-
-                    <button class="btn btn-primary" ng-click="">Next step <span class="glyphicon glyphicon glyphicon-menu-right"></span>
-                    </button>
-                </div>
-
-            </div>
-
-            <div class="well col-md-12 step3">
-                <h1>Step 3; What Font would you like? </h1>
-                <div class="input-group">
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="font-select" id="font-select-lato" value="lato" ng-model="newCard.font"><span class="lato">Lato</span>
-                            <p class="example lato">The quick brown fox jumps over the lazy dog</p>
-
-                        </label>
-                    </div>
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="font-select" id="font-select-montserrat" value="montserrat" ng-model="newCard.font"><span class="montserrat">Montserrat</span>
-                            <p class="example montserrat">The quick brown fox jumps over the lazy dog</p>
-
-                        </label>
-
-                    </div>
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="font-select" id="font-select-handlee" value="handlee" ng-model="newCard.font"><span class="handlee">Handlee</span>
-                            <p class="example handlee">The quick brown fox jumps over the lazy dog</p>
-
-                        </label>
-
-                    </div>
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="font-select" id="font-select-gloria" value="gloria" ng-model="newCard.font"><span class="gloria">Gloria Hallelujah</span>
-                            <p class="example gloria">The quick brown fox jumps over the lazy dog</p>
-
-                        </label>
-
-                    </div>
-
-
-
-
-                    <button class="btn btn-primary" ng-click="">Next step <span class="glyphicon glyphicon-menu-right"></span>
-                    </button>
-
-                </div>
-            </div>
-            <div class="well col-md-12 step4">
-                <h1>Step 4; Set a background image</h1>
+            <div class="input-group">
                 <div class="radio">
                     <label>
-                        <input type="radio" name="image-select" id="image-select-grass" value="image-grass" ng-model="newCard.image"> <img src="images/gras.jpg" height="50" alt="" class="imgexample">Grass
-
+                        <input type="radio" name="aspect-select" id="aspect-select-landscape" value="landscape" ng-model="newCard.cardFormat"> Landscape
                     </label>
-
                 </div>
                 <div class="radio">
                     <label>
-                        <input type="radio" name="image-select" id="image-select-stars" value="image-moon" ng-model="newCard.image"> <img src="images/moon_and_stars.jpg" height="50" alt="" class="imgexample">Stars
-
+                        <input type="radio" name="aspect-select" id="aspect-select-portrait" value="portrait" ng-model="newCard.aspect"> Portrait
                     </label>
-
                 </div>
                 <div class="radio">
                     <label>
-                        <input type="radio" name="image-select" id="image-select-skyscraper" value="image-skyscraper" ng-model="newCard.image"> <img src="images/skyscraper.jpg" height="50" alt="" class="imgexample">Skyscraper
-
+                        <input type="radio" name="aspect-select" id="aspect-select-square" value="square" ng-model="newCard.cardFormat"> Square
                     </label>
-
-                </div>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="image-select" id="image-select-winter" value="image-winter" ng-model="newCard.image"> <img src="images/winter.jpg" height="50" alt="" class="imgexample">Winter
-
-                    </label>
-
                 </div>
 
-
-                <button class="btn btn-primary" ng-click="">Next step <span class="glyphicon glyphicon-menu-right"></span>
-                </button>
-
-            </div>
-            <div class="well col-md-12 step5">
-                <h1>Step 5; Select a base colour</h1>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="colour-select" id="colour-select-red" value="red" ng-model="newCard.color">
-                        <div class="colorsample red"></div> Red
-
-                    </label>
-
-                </div>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="colour-select" id="colour-select-blue" value="blue" ng-model="newCard.color">
-                        <div class="colorsample blue"></div> Blue
-
-                    </label>
-
-                </div>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="colour-select" id="colour-select-green" value="green" ng-model="newCard.color">
-                        <div class="colorsample green"></div> Green
-
-                    </label>
-
-                </div>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="colour-select" id="colour-select-special" value="special" ng-model="newCard.color">
-                        <div class="colorsample special"></div> Special
-
-                    </label>
-
-                </div>
-
-
-                <button class="btn btn-primary" ng-click="">Next step <span class="glyphicon glyphicon-menu-right"></span>
-                </button>
-
-            </div>
-            <div class="well col-md-12 step6">
-                <h1>Step 6; Enter the title text</h1>
-                <div class="input-group input-group-lg">
-                  <input type="text" ng-model="newCard.text" class="input-group-lg">
-                </div>
-
-
-                <button class="btn btn-primary" ng-click="">Next step <span class="glyphicon glyphicon-menu-right"></span>
-                </button>
-
-            </div>
-
-            <pre class="col-md-12"><strong> The chosen options for a new card: </strong> <br>{{ newCard | json }}</pre>
-
-
-            <div class="row">
-                <button class="btn btn-danger listing-button col-md-6 col-md-offset-3" ng-click="addCard(newCard)"><span class="glyphicon glyphicon-plus-sign"></span> Add a new card with these settings!
-
+                <button class="btn btn-primary" ng-click="showStep = !showStep">Next step <span class="glyphicon glyphicon glyphicon-menu-right"></span>
                 </button>
             </div>
-            <br>
+
+        </div>
+        <div class="well col-md-12 step2" ng-show="showStep">
+            <h1>Step 2; Would you like <em>rounded</em> corners?</h1>
+
+            <div class="input-group">
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="rounded-select" id="rounded-select-yes" value="rounded" ng-model="newCard.rounded">Yes, please
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="rounded-select" id="rounded-select-no" value="notRounded" ng-model="newCard.rounded">No, thanks
+                    </label>
+                </div>
+
+                <button class="btn btn-primary" ng-click="">Next step <span class="glyphicon glyphicon glyphicon-menu-right"></span>
+                </button>
+            </div>
+
         </div>
 
+        <div class="well col-md-12 step3">
+            <h1>Step 3; What Font would you like? </h1>
+            <div class="input-group">
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="font-select" id="font-select-lato" value="lato" ng-model="newCard.font"><span class="lato">Lato</span>
+                        <p class="example lato">The quick brown fox jumps over the lazy dog</p>
 
-        <!--
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="font-select" id="font-select-montserrat" value="montserrat" ng-model="newCard.font"><span class="montserrat">Montserrat</span>
+                        <p class="example montserrat">The quick brown fox jumps over the lazy dog</p>
+
+                    </label>
+
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="font-select" id="font-select-handlee" value="handlee" ng-model="newCard.font"><span class="handlee">Handlee</span>
+                        <p class="example handlee">The quick brown fox jumps over the lazy dog</p>
+
+                    </label>
+
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="font-select" id="font-select-gloria" value="gloria" ng-model="newCard.font"><span class="gloria">Gloria Hallelujah</span>
+                        <p class="example gloria">The quick brown fox jumps over the lazy dog</p>
+
+                    </label>
+
+                </div>
+
+
+
+
+                <button class="btn btn-primary" ng-click="">Next step <span class="glyphicon glyphicon-menu-right"></span>
+                </button>
+
+            </div>
+        </div>
+        <div class="well col-md-12 step4">
+            <h1>Step 4; Set a background image</h1>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="image-select" id="image-select-grass" value="image-grass" ng-model="newCard.image"> <img src="images/gras.jpg" height="50" alt="" class="imgexample">Grass
+
+                </label>
+
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="image-select" id="image-select-stars" value="image-moon" ng-model="newCard.image"> <img src="images/moon_and_stars.jpg" height="50" alt="" class="imgexample">Stars
+
+                </label>
+
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="image-select" id="image-select-skyscraper" value="image-skyscraper" ng-model="newCard.image"> <img src="images/skyscraper.jpg" height="50" alt="" class="imgexample">Skyscraper
+
+                </label>
+
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="image-select" id="image-select-winter" value="image-winter" ng-model="newCard.image"> <img src="images/winter.jpg" height="50" alt="" class="imgexample">Winter
+
+                </label>
+
+            </div>
+
+
+            <button class="btn btn-primary" ng-click="">Next step <span class="glyphicon glyphicon-menu-right"></span>
+            </button>
+
+        </div>
+        <div class="well col-md-12 step5">
+            <h1>Step 5; Select a base colour</h1>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="colour-select" id="colour-select-red" value="red" ng-model="newCard.color">
+                    <div class="colorsample red"></div> Red
+
+                </label>
+
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="colour-select" id="colour-select-blue" value="blue" ng-model="newCard.color">
+                    <div class="colorsample blue"></div> Blue
+
+                </label>
+
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="colour-select" id="colour-select-green" value="green" ng-model="newCard.color">
+                    <div class="colorsample green"></div> Green
+
+                </label>
+
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="colour-select" id="colour-select-special" value="special" ng-model="newCard.color">
+                    <div class="colorsample special"></div> Special
+
+                </label>
+
+            </div>
+
+
+            <button class="btn btn-primary" ng-click="">Next step <span class="glyphicon glyphicon-menu-right"></span>
+            </button>
+
+        </div>
+        <div class="well col-md-12 step6">
+            <h1>Step 6; Enter the title text</h1>
+            <div class="input-group input-group-lg">
+                <input type="text" ng-model="newCard.text" class="input-group-lg">
+            </div>
+
+
+            <button class="btn btn-primary" ng-click="">Next step <span class="glyphicon glyphicon-menu-right"></span>
+            </button>
+
+        </div>
+
+        <pre class="col-md-12"><strong> The chosen options for a new card: </strong> <br>{{ newCard | json }}</pre>
+
+
+        <div class="row">
+            <button class="btn btn-danger listing-button col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3" ng-click="addCard(newCard)"><span class="glyphicon glyphicon-plus-sign"></span> Add a new card with these settings!
+
+            </button>
+        </div>
+        <br>
+    </div>
+
+
+    <!--
              examplecards
             <h2>Some  static examples</h2>
             <p>Just a small impression of the thing you could make through this app..</p>
@@ -256,27 +259,27 @@
             <hr>
 -->
 
-        <div class="angular-cards">
-            <h1>Angular Cards</h1>
-            <p class="lead">These cards are build based on the data in a JSON file. With the form elements above the individual setting can be manipulated.</p>
-            <div ng-repeat="card in cards | orderBy: '-id'" class="card {{ card.aspect }} {{ card.rounded }} {{ card.image }} {{ card.font }}">
-                <p class="hidden">{{ card.id }}</p>
-                <h1>{{  card.text  }}</h1>
-                <div class="fold {{ card.color }}">
-                    <div class="icon"><i class="glyphicon glyphicon-star"></i>
-                    </div>
-                    <p class="white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <div class="angular-cards">
+        <h1>Angular Cards</h1>
+        <p class="lead">These cards are build based on the data in a JSON file. With the form elements above the individual setting can be manipulated.</p>
+        <div ng-repeat="card in cards | orderBy: '-id'" class="card {{ card.aspect }} {{ card.rounded }} {{ card.image }} {{ card.font }}">
+            <p class="hidden">{{ card.id }}</p>
+            <h1>{{  card.text  }}</h1>
+            <div class="fold {{ card.color }}">
+                <div class="icon"><i class="glyphicon glyphicon-star"></i>
                 </div>
+                <p class="white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             </div>
         </div>
-        <h3>Used JSON file:</h3>
-        <p>Below you can take a peek at the code to see the used JSON file. Click the button to show.
-            <br>
-            <br>
-            <button class="btn btn-primary" ng-click="showjson = !showjson">Toggle JSON</button>
-            <br>
-        </p>
-        <pre ng-show="showjson == true">{{ cards | json }}</pre>
+    </div>
+    <h3>Used JSON file:</h3>
+    <p>Below you can take a peek at the code to see the used JSON file. Click the button to show.
+        <br>
+        <br>
+        <button class="btn btn-primary" ng-click="showjson = !showjson">Toggle JSON</button>
+        <br>
+    </p>
+    <pre ng-show="showjson == true">{{ cards | json }}</pre>
 
     </div>
 
@@ -285,16 +288,20 @@
     #todo
     -Angular: 
         -Build from json settings file (-DONE)
-        -choose aspect-ratio,
-        -choose font,
-        -choose color,
-        -choose text,
+        -choose aspect-ratio,(-DONE)
+        -choose font,(-DONE)
+        -choose color,(-DONE)
+        -choose text,(-DONE)
         -choose icon,
-        -choose background-image from shortlist,
+        -choose background-image from shortlist,(-DONE)
+        -Only show current step, hide others
+        -Open / close addcards section
+        -2.0 make a variation with news articles from an external source
     -SASS:
         -build cards modular (-DONE)
         
 </pre>
+
 
 
 
