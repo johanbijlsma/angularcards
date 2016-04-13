@@ -9,6 +9,7 @@ angular
     $scope.addCard = function(newCard){
         $scope.newCard.id = "i++";
         $scope.cards.push(newCard);
+        $http.post('data/cards.json') ;
         $scope.newCard = {};
     }
 

@@ -1,75 +1,67 @@
-   [
-           {
-               "id": 1,
-               "aspect": "landscape",
-               "rounded": "rounded",
-               "font": "lato",
-               "image": "image-grass",
-               "color": "green",
-               "text": "Angular Card"
-             },
-           {
-               "id": 2,
-               "aspect": "square",
-               "rounded": "",
-               "font": "handlee",
-               "image": "image-skyscraper",
-               "color": "blue",
-               "text": "Business Test"
-        },
-           {
-               "id": 3,
-               "aspect": "",
-               "rounded": "rounded",
-               "font": "montserrad",
-               "image": "image-winter",
-               "color": "red",
-               "text": "snowy trees"
-        },
-           {
-               "id": 4,
-               "aspect": "landscape",
-               "rounded": "",
-               "font": "handlee",
-               "image": "image-moon",
-               "color": "red",
-               "text": "Congratulations"
-        },
-           {
-               "id": 5,
-               "aspect": "landscape",
-               "rounded": "rounded",
-               "font": "handlee",
-               "image": "image-moon",
-               "color": "special",
-               "text": "Business Test"
-        },
-           {
-               "id": 6,
-               "aspect": "square",
-               "rounded": "",
-               "font": "gloria",
-               "image": "image-skyscraper",
-               "color": "blue",
-               "text": "Business Test"
-        },
-           {
-               "id": 7,
-               "aspect": "",
-               "rounded": "rounded",
-               "font": "gloria",
-               "image": "image-winter",
-               "color": "blue",
-               "text": "Business Test"
-        },
-           {
-               "id": 8,
-               "aspect": "square",
-               "rounded": "",
-               "font": "lato",
-               "image": "image-grass",
-               "color": "red",
-               "text": "grassy..."
-        }
+   [{
+           "id": 1,
+           "aspect": "landscape",
+           "rounded": "rounded",
+           "font": "lato",
+           "image": "image-grass",
+           "color": "green",
+           "text": "Angular Card"
+       }, {
+           "id": 2,
+           "aspect": "square",
+           "rounded": "",
+           "font": "handlee",
+           "image": "image-skyscraper",
+           "color": "blue",
+           "text": "Business Test"
+       }, {
+           "id": 3,
+           "aspect": "",
+           "rounded": "rounded",
+           "font": "montserrad",
+           "image": "image-winter",
+           "color": "red",
+           "text": "snowy trees"
+       }, {
+           "id": 4,
+           "aspect": "landscape",
+           "rounded": "",
+           "font": "handlee",
+           "image": "image-moon",
+           "color": "red",
+           "text": "Congratulations"
+       }, {
+           "id": 5,
+           "aspect": "landscape",
+           "rounded": "rounded",
+           "font": "handlee",
+           "image": "image-moon",
+           "color": "special",
+           "text": "Business Test"
+       }, {
+           "id": 6,
+           "aspect": "square",
+           "rounded": "",
+           "font": "gloria",
+           "image": "image-skyscraper",
+           "color": "blue",
+           "text": "Business Test"
+       }, {
+           "id": 7,
+           "aspect": "",
+           "rounded": "rounded",
+           "font": "gloria",
+           "image": "image-winter",
+           "color": "blue",
+           "text": "Business Test"
+       }, {
+           "id": 8,
+           "aspect": "square",
+           "rounded": "",
+           "font": "lato",
+           "image": "image-grass",
+           "color": "red",
+           "text": "grassy..."
+       }
 
-    ]
+   ]
