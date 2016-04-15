@@ -1,138 +1,139 @@
-/* line 33, ../Sass/style.scss */
-.card-examples,
-.angular-cards {
+/* line 27, ../Sass/style.scss */
+.angular-cards,
+.card-examples {
   display: flex;
   justify-content: space-between;
   clear: left;
   flex-wrap: wrap;
 }
-/* line 39, ../Sass/style.scss */
-.card-examples .card,
-.angular-cards .card {
+/* line 33, ../Sass/style.scss */
+.angular-cards .card,
+.card-examples .card {
+  transition: all 5s ease-in;
   height: 18em;
   width: 12em;
   background: #e5e5e5;
-  box-shadow: 0px 20px 13px -10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 20px 13px -10px rgba(0, 0, 0, 0.5);
   text-align: center;
   position: relative;
   margin-bottom: 4em;
   overflow: hidden;
 }
-/* line 49, ../Sass/style.scss */
-.card-examples .card.landscape,
-.angular-cards .card.landscape {
+/* line 44, ../Sass/style.scss */
+.angular-cards .card.landscape,
+.card-examples .card.landscape {
   height: 12em;
   width: 18em;
 }
-/* line 53, ../Sass/style.scss */
-.card-examples .card.square,
-.angular-cards .card.square {
+/* line 48, ../Sass/style.scss */
+.angular-cards .card.square,
+.card-examples .card.square {
   width: 18em;
   height: 18em;
 }
-/* line 57, ../Sass/style.scss */
-.card-examples .card.rounded,
-.angular-cards .card.rounded {
+/* line 52, ../Sass/style.scss */
+.angular-cards .card.rounded,
+.card-examples .card.rounded {
   border-radius: 5px;
 }
-/* line 61, ../Sass/style.scss */
-.card-examples .card.opensans,
-.angular-cards .card.opensans {
+/* line 56, ../Sass/style.scss */
+.angular-cards .card.opensans,
+.card-examples .card.opensans {
   font-family: "Open Sans", sans-serif;
 }
-/* line 64, ../Sass/style.scss */
-.card-examples .card.lato,
-.angular-cards .card.lato {
+/* line 59, ../Sass/style.scss */
+.angular-cards .card.lato,
+.card-examples .card.lato {
   font-family: "Lato", sans-serif;
 }
-/* line 67, ../Sass/style.scss */
-.card-examples .card.montserrat,
-.angular-cards .card.montserrat {
+/* line 62, ../Sass/style.scss */
+.angular-cards .card.montserrat,
+.card-examples .card.montserrat {
   font-family: "Montserrat", sans-serif;
 }
-/* line 70, ../Sass/style.scss */
-.card-examples .card.handlee,
-.angular-cards .card.handlee {
+/* line 65, ../Sass/style.scss */
+.angular-cards .card.handlee,
+.card-examples .card.handlee {
   font-family: "Handlee", cursive;
 }
-/* line 73, ../Sass/style.scss */
-.card-examples .card.gloria,
-.angular-cards .card.gloria {
+/* line 68, ../Sass/style.scss */
+.angular-cards .card.gloria,
+.card-examples .card.gloria {
   font-family: "Gloria Hallelujah", cursive;
 }
-/* line 77, ../Sass/style.scss */
-.card-examples .card.image-grass,
-.angular-cards .card.image-grass {
-  background: url(../images/gras.jpg);
+/* line 72, ../Sass/style.scss */
+.angular-cards .card.image-grass,
+.card-examples .card.image-grass {
+  background: url("../images/gras.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
-/* line 83, ../Sass/style.scss */
-.card-examples .card.image-moon,
-.angular-cards .card.image-moon {
-  background: url(../images/moon_and_stars.jpg);
+/* line 78, ../Sass/style.scss */
+.angular-cards .card.image-moon,
+.card-examples .card.image-moon {
+  background: url("../images/moon_and_stars.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
-/* line 89, ../Sass/style.scss */
-.card-examples .card.image-skyscraper,
-.angular-cards .card.image-skyscraper {
-  background: url(../images/skyscraper.jpg);
+/* line 84, ../Sass/style.scss */
+.angular-cards .card.image-skyscraper,
+.card-examples .card.image-skyscraper {
+  background: url("../images/skyscraper.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
-/* line 95, ../Sass/style.scss */
-.card-examples .card.image-winter,
-.angular-cards .card.image-winter {
-  background: url(../images/winter.jpg);
+/* line 90, ../Sass/style.scss */
+.angular-cards .card.image-winter,
+.card-examples .card.image-winter {
+  background: url("../images/winter.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
-/* line 101, ../Sass/style.scss */
-.card-examples .card .fold,
-.angular-cards .card .fold {
+/* line 96, ../Sass/style.scss */
+.angular-cards .card .fold,
+.card-examples .card .fold {
   position: absolute;
   top: 50%;
   display: block;
   height: 60%;
   width: 100%;
 }
-/* line 107, ../Sass/style.scss */
-.card-examples .card .fold.green,
-.angular-cards .card .fold.green {
+/* line 102, ../Sass/style.scss */
+.angular-cards .card .fold.green,
+.card-examples .card .fold.green {
   background: #3aad3a;
   border-top: #2b802b solid 5px;
 }
-/* line 110, ../Sass/style.scss */
-.card-examples .card .fold.red,
-.angular-cards .card .fold.red {
+/* line 105, ../Sass/style.scss */
+.angular-cards .card .fold.red,
+.card-examples .card .fold.red {
   background: #c63a3a;
   border-top: #9f2c2c solid 5px;
 }
-/* line 113, ../Sass/style.scss */
-.card-examples .card .fold.blue,
-.angular-cards .card .fold.blue {
+/* line 108, ../Sass/style.scss */
+.angular-cards .card .fold.blue,
+.card-examples .card .fold.blue {
   background: #415be8;
   border-top: #2b4c80 solid 5px;
 }
-/* line 116, ../Sass/style.scss */
-.card-examples .card .fold.special,
-.angular-cards .card .fold.special {
+/* line 111, ../Sass/style.scss */
+.angular-cards .card .fold.special,
+.card-examples .card .fold.special {
   background: linear-gradient(45deg, #415BE7 0%, #415be8 10%, #c8b423 10%, #c8b423 20%, #415be8 20%, #415be8 30%, #c8b423 30%, #c8b423 40%, #415BE7 40%, #415be8 50%, #c8b423 50%, #c8b423 60%, #415be8 60%, #415be8 70%, #c8b423 70%, #c8b423 80%, #415BE7 80%, #415be8 90%, #c8b423 90%, #c8b423 100%);
   border-top: #2b4c80 solid 5px;
 }
-/* line 119, ../Sass/style.scss */
-.card-examples .card .fold .icon,
-.angular-cards .card .fold .icon {
+/* line 114, ../Sass/style.scss */
+.angular-cards .card .fold .icon,
+.card-examples .card .fold .icon {
   margin-top: -30px;
 }
-/* line 121, ../Sass/style.scss */
-.card-examples .card .fold .icon i,
-.angular-cards .card .fold .icon i {
+/* line 116, ../Sass/style.scss */
+.angular-cards .card .fold .icon i,
+.card-examples .card .fold .icon i {
   font-size: 2.4em;
   background: #fff;
   border-radius: 50%;
@@ -141,26 +142,33 @@
   line-height: 1.6em;
   border: #999 thin solid;
   color: goldenrod;
-  box-shadow: 0px 20px 13px -10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 20px 13px -10px rgba(0, 0, 0, 0.5);
 }
-/* line 134, ../Sass/style.scss */
-.card-examples .card h1,
-.angular-cards .card h1 {
+/* line 129, ../Sass/style.scss */
+.angular-cards .card h1,
+.card-examples .card h1 {
   font-size: 1.8em;
   text-shadow: 1px 1px 3px #fff;
 }
-/* line 138, ../Sass/style.scss */
-.card-examples .card p.white,
-.angular-cards .card p.white {
+/* line 133, ../Sass/style.scss */
+.angular-cards .card p.white,
+.card-examples .card p.white {
   color: #fff;
   padding: 0.5em;
 }
 
-/* line 146, ../Sass/style.scss */
+/* line 139, ../Sass/style.scss */
+.CTAdiv {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.15), rgba(255, 255, 255, 0.5) 94%);
+  text-align: center;
+  padding: 1em;
+}
+
+/* line 145, ../Sass/style.scss */
 .addCards img.imgexample {
   margin-right: 30px;
 }
-/* line 149, ../Sass/style.scss */
+/* line 148, ../Sass/style.scss */
 .addCards .colorsample {
   height: 50px;
   width: 66.8px;
@@ -169,45 +177,49 @@
   display: inline-block;
   vertical-align: middle;
 }
-/* line 156, ../Sass/style.scss */
+/* line 155, ../Sass/style.scss */
 .addCards .colorsample.red {
   background: #c63a3a;
   border-top: #9f2c2c solid 5px;
 }
-/* line 159, ../Sass/style.scss */
+/* line 158, ../Sass/style.scss */
 .addCards .colorsample.blue {
   background: #415be8;
   border-top: #2b4c80 solid 5px;
 }
-/* line 162, ../Sass/style.scss */
+/* line 161, ../Sass/style.scss */
 .addCards .colorsample.green {
   background: #3aad3a;
   border-top: #2b802b solid 5px;
 }
-/* line 165, ../Sass/style.scss */
+/* line 164, ../Sass/style.scss */
 .addCards .colorsample.special {
   background: linear-gradient(45deg, #415BE7 0%, #415be8 10%, #c8b423 10%, #c8b423 20%, #415be8 20%, #415be8 30%, #c8b423 30%, #c8b423 40%, #415BE7 40%, #415be8 50%, #c8b423 50%, #c8b423 60%, #415be8 60%, #415be8 70%, #c8b423 70%, #c8b423 80%, #415BE7 80%, #415be8 90%, #c8b423 90%, #c8b423 100%);
   border-top: #2b4c80 solid 5px;
 }
-/* line 169, ../Sass/style.scss */
+/* line 168, ../Sass/style.scss */
 .addCards p.example {
   margin-left: 2em;
   color: #337AB7;
   float: right;
 }
-/* line 173, ../Sass/style.scss */
+/* line 172, ../Sass/style.scss */
 .addCards p.example.lato {
   font-family: "Lato", sans-serif;
 }
-/* line 176, ../Sass/style.scss */
+/* line 175, ../Sass/style.scss */
 .addCards p.example.montserrat {
   font-family: "Montserrat", sans-serif;
 }
-/* line 179, ../Sass/style.scss */
+/* line 178, ../Sass/style.scss */
 .addCards p.example.handlee {
   font-family: "Handlee", cursive;
 }
-/* line 182, ../Sass/style.scss */
+/* line 181, ../Sass/style.scss */
 .addCards p.example.gloria {
   font-family: "Gloria Hallelujah", cursive;
+}
+/* line 185, ../Sass/style.scss */
+.addCards .well {
+  transition: all 5s ease-in;
 }

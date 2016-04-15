@@ -5,6 +5,9 @@ $lato: 'Lato', sans-serif;
 $montserrat: 'Montserrat', sans-serif;
 $handlee: 'Handlee', cursive;
 $shadow: 0 20px 13px -10px rgba(0, 0, 0, 0.5);
+@mixin transision {
+    transition: all 5s ease-in;
+}
 @mixin green {
     background: #3aad3a;
     border-top: #2b802b solid 5px;
@@ -28,6 +31,7 @@ $shadow: 0 20px 13px -10px rgba(0, 0, 0, 0.5);
     clear: left;
     flex-wrap: wrap;
     .card {
+        @include transision;
         height: 18em;
         width: 12em;
         background: #e5e5e5;
@@ -132,6 +136,11 @@ $shadow: 0 20px 13px -10px rgba(0, 0, 0, 0.5);
         }
     }
 }
+.CTAdiv {
+    background: linear-gradient(to top, rgba(0,0,0,0.15), rgba(255, 255, 255,0.5) 94%);
+    text-align: center;
+    padding: 1em;
+}
 .addCards {
     img.imgexample {
         margin-right: 30px;
@@ -172,5 +181,8 @@ $shadow: 0 20px 13px -10px rgba(0, 0, 0, 0.5);
         &.gloria {
             font-family: $gloria;
         }
+    }
+    .well {
+        @include transision;
     }
 }
